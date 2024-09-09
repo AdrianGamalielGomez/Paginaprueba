@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia de Streamers</title>
+    <title>Academia de Streamers - Spark Academy</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -17,59 +19,88 @@
                 <li><a href="#testimonios">Testimonios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
     <section id="inicio" class="hero">
-        <h1>Bienvenido a Spark Academy</h1>
-        <p>¡Conviértete en el próximo gran streamer con nuestros cursos!</p>
-        <a href="#cursos" class="btn-primary">Ver Cursos</a>
+        <div class="hero-content">
+            <h1>Conviértete en un Streamer Profesional</h1>
+            <p>Domina las plataformas de streaming y destaca con nuestras guías expertas.</p>
+            <a href="#cursos" class="btn-primary">Empieza Ahora</a>
+        </div>
     </section>
 
     <section id="cursos" class="courses">
         <h2>Nuestros Cursos</h2>
         <div class="course-list">
             <div class="course-item">
+                <img src="curso-basico.jpg" alt="Curso Básico de Streaming">
                 <h3>Curso Básico de Streaming</h3>
-                <p>Aprende los fundamentos para iniciar tu carrera como streamer.</p>
+                <p>Fundamentos para iniciar tu carrera como streamer.</p>
+                <a href="#" class="btn-secondary">Más Información</a>
             </div>
             <div class="course-item">
+                <img src="curso-marketing.jpg" alt="Marketing para Streamers">
                 <h3>Marketing para Streamers</h3>
-                <p>Descubre cómo crecer tu audiencia y monetizar tus transmisiones.</p>
+                <p>Crece tu audiencia y monetiza tus transmisiones.</p>
+                <a href="#" class="btn-secondary">Más Información</a>
             </div>
             <div class="course-item">
-                <h3>Avanzado en Técnicas de Streaming</h3>
+                <img src="curso-avanzado.jpg" alt="Técnicas Avanzadas de Streaming">
+                <h3>Técnicas Avanzadas de Streaming</h3>
                 <p>Perfecciona tu técnica y calidad de producción.</p>
+                <a href="#" class="btn-secondary">Más Información</a>
             </div>
         </div>
     </section>
 
     <section id="testimonios" class="testimonials">
-        <h2>Testimonios</h2>
-        <div class="testimonial-list">
+        <h2>Lo Que Dicen Nuestros Alumnos</h2>
+        <div class="testimonial-slider">
             <div class="testimonial-item">
-                <p>"Gracias a Spark Academy, ahora soy un streamer profesional. ¡Recomiendo sus cursos al 100%!"</p>
-                <span>- Juan Pérez</span>
+                <p>"Gracias a Spark Academy, mi canal ha crecido enormemente. ¡Los cursos son muy completos!"</p>
+                <span>- Laura Fernández</span>
             </div>
             <div class="testimonial-item">
-                <p>"Los instructores son increíbles y el contenido es muy completo. ¡Me encantó!"</p>
-                <span>- María Gómez</span>
+                <p>"Los instructores son muy profesionales y las lecciones están bien estructuradas. ¡Me encantó!"</p>
+                <span>- Pedro García</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"He aprendido mucho sobre marketing y producción de contenido. ¡Altamente recomendado!"</p>
+                <span>- Sofía Martínez</span>
             </div>
         </div>
     </section>
 
     <section id="contacto" class="contact">
-        <h2>Contacto</h2>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Tu Nombre" required>
-            <input type="email" id="email" placeholder="Tu Email" required>
-            <textarea id="message" placeholder="Tu Mensaje" required></textarea>
-            <button type="submit" class="btn-primary">Enviar</button>
+        <h2>Contáctanos</h2>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Tu Nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Tu Email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" placeholder="Tu Mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Spark Academy. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Spark Academy. Todos los derechos reservados.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>
