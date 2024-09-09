@@ -1,14 +1,11 @@
+document.getElementById('mobile-menu').addEventListener('click', function() {
+    const nav = document.querySelector('.nav-links');
+    nav.classList.toggle('nav-active');
+    this.classList.toggle('toggle');
+});
+
+// Validación del formulario de contacto
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    if (name && email && message) {
-        alert('Gracias por contactarnos, ' + name + '. Nos pondremos en contacto contigo pronto.');
-        this.reset();
-    } else {
-        alert('Por favor, completa todos los campos.');
-    }
+    alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
 });
